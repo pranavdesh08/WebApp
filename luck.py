@@ -31,7 +31,7 @@ def dataAnalysis(lst):
     
     s=pd.DataFrame({'month_year':Sent_emails.index, 'sent':Sent_emails.values})
     
-  
+   
         
     def sent():    
         return Sent_emails
