@@ -1,0 +1,60 @@
+
+{% block body %}
+<div class="jumbotron text-center">
+    <h1>Welcome To WebApp</h1>
+     <body>
+      <form action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+   </body>   
+</div>
+  
+  
+<div class="jumbotron text-center">
+<h1>Select the required template</h1>
+<form action="http://localhost:5000/processed-template" method="POST">
+    <select name="a" multiple>
+        {% for temp1 in templ1 %}
+        <option value= "{{temp1}}" SELECTED>{{temp1}}</option>"
+        {% endfor %}        
+    </select>
+    <input type='submit'>       
+</form> 
+</div>
+
+
+<div class="container" align="left">
+	<a href="/download/" target="blank"><button class='btn btn-default'>Download!</button></a>
+ </div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
